@@ -1,0 +1,1 @@
+import React from 'react'; export const PastPapers: React.FC = () => null;

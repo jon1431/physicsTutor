@@ -1,0 +1,8 @@
+
+{
+  "name": "Gemini Physics Tutor Pro",
+  "description": "An AI-powered Matriculation study companion for solving complex physics problems and mastering exams.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
