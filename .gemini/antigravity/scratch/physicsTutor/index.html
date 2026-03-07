@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini Physics Tutor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
+    "remark-gfm": "https://aistudiocdn.com/remark-gfm@^4.0.1",
+    "remark-math": "https://aistudiocdn.com/remark-math@^6.0.0",
+    "rehype-katex": "https://aistudiocdn.com/rehype-katex@^7.0.0"
+  }
+}
+</script>
+<style>
+  /* Optimized Global Scoped Styles */
+  .custom-scrollbar::-webkit-scrollbar { width: 5px; }
+  .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+  .custom-scrollbar::-webkit-scrollbar-thumb { background: #374151; border-radius: 10px; }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #4b5563; }
+
+  /* Physics Tutor Article Styles */
+  .tutor-article { line-height: 1.8; color: #d1d5db; }
+  .tutor-article h3 { color: #22d3ee; font-weight: 800; margin-top: 1.5rem; margin-bottom: 0.75rem; border-bottom: 1px solid rgba(34, 211, 238, 0.2); padding-bottom: 0.25rem; }
+  .tutor-article hr { border-color: rgba(75, 85, 99, 0.3); margin: 1.5rem 0; }
+  .tutor-article ul { margin-bottom: 1rem; list-style-type: none; padding-left: 0; }
+  .tutor-article li { position: relative; padding-left: 1.25rem; margin-bottom: 0.5rem; }
+  .tutor-article li::before { content: "•"; position: absolute; left: 0; color: #06b6d4; font-weight: bold; }
+  .tutor-article strong { color: #06b6d4; background: rgba(6, 182, 212, 0.05); padding: 0 0.2rem; border-radius: 0.2rem; }
+  .tutor-article .katex-display { background: rgba(0, 0, 0, 0.2); padding: 1rem; border-radius: 1rem; margin: 1rem 0; border: 1px solid rgba(6, 182, 212, 0.1); }
+
+  /* Quiz Specific Layout Fixes */
+  .quiz-question p, .quiz-option-text p { margin-bottom: 0; }
+  .quiz-question .katex-display, .quiz-option-text .katex-display { margin: 1rem 0; padding: 1rem; background: rgba(0,0,0,0.1); border-radius: 0.75rem; }
+  .quiz-option-text .katex { font-size: 1.05em; }
+
+  /* Study Notes Article Styles */
+  .notes-article { --tw-prose-body: #9ca3af; --tw-prose-headings: #f3f4f6; font-size: 1.125rem; line-height: 2; }
+  .notes-article h3 { font-size: 2rem; font-weight: 900; margin-top: 4rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(6, 182, 212, 0.2); color: #06b6d4; }
+  .notes-article strong { color: #fff; font-weight: 800; background-color: rgba(6, 182, 212, 0.15); padding: 0 0.4rem; border-radius: 0.3rem; }
+  .notes-article .katex-display { background: rgba(0, 0, 0, 0.25); padding: 2rem; border-radius: 2rem; margin: 3.5rem 0; border: 1px solid rgba(6, 182, 212, 0.1); }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-900">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
